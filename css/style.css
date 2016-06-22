@@ -1,0 +1,93 @@
+@import 'https://fonts.googleapis.com/css?family=Arvo|Bungee';
+
+* {
+  font-family: 'Arvo', serif;
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+}
+
+#input {
+  margin: 20px 10px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid black;
+}
+
+#add_btn,
+button {
+  padding: 8px;
+}
+
+
+#new_todo {
+  padding: 6px;
+  width: 70%;
+}
+
+#input {
+  padding-top: 30px;
+}
+
+header,
+#input,
+#list,
+#actions {
+  width: 70%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  color: black;
+  list-style-type: none;
+  padding: 10px;
+  border-bottom: 1px solid darkgray;
+  cursor: pointer;
+}
+
+li:nth-child(odd) {
+    background-color: #C9CFBB;
+}
+li:nth-child(even) {
+    background-color: #EEF1E7;
+}
+
+.edit,
+.remove {
+	display: none;
+	font-size: 0.6em;
+	margin-left: 10px;
+}
+
+li:hover .edit,
+li:hover .remove {
+	display: inline-block;
+}
+
+#app {
+  width: 80%;
+  margin: auto;
+/*   border: 1px solid gray; */
+}
+
+#actions {
+  position: relative;
+}
+
+#total {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
